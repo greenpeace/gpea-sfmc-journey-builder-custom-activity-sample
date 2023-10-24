@@ -83,6 +83,7 @@ When you click on the Custom Activity, a JSON edit panel will pop up. This panel
 - `arguments.execute.inArguments`: Define which fields should be send to external server. And the external server URL is defined in `arguments.execute.url`
     - `{"ContactKey": "{{Contact.Key}}"}` : The Subscriber Key of Marketing Cloud
     - `{"FIELD_NAME": "{{Contact.Attribute.Contacts.DATAEXTENSION_NAME.FIELDNAME}}"}` You can also define any `FIELD_NAME` and refer to the Contact Data, `Contacts.DATAEXTENSION_NAME.FIELDNAME`
+    - see [How Data Binding Works | Marketing Cloud APIs and SDKs | Salesforce Developers](https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/how-data-binding-works.html) for more detail binding syntax
 - `schema.arguments.execute.outArguments` : Define this activity should expose some variable for the following activity to use.
 
 ### Sample body sent to external server (`arguments.execute.url`)
@@ -171,3 +172,12 @@ Expected the external server response.
 ```
 
 In this response, the contact will go through the "uchen" branch.
+
+
+# Useful Links
+
+* [Build Custom Activities and Events | Marketing Cloud APIs and SDKs | Salesforce Developers](https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/creating-activities.html)
+* [Rest Activity Format | Marketing Cloud APIs and SDKs | Salesforce Developers](https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/rest.html)
+* [How Data Binding Works | Marketing Cloud APIs and SDKs | Salesforce Developers](https://developer.salesforce.com/docs/marketing/marketing-cloud/guide/how-data-binding-works.html)
+* Official Custom Activity Sample [salesforce-marketingcloud/http-request: Template for Custom Journey Builder Trigger](https://github.com/salesforce-marketingcloud/http-request/tree/master)
+

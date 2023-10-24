@@ -12,14 +12,15 @@ This repository is for demonstrating how to build a basic marketing cloud journe
 - A static web server can host HTML/CSS/JavaScript files and provide public HTTPS connections.
 - [RequestBin](https://pipedream.com/requestbin) to capture and investigate requests sent from the marketing cloud using public HTTPS URLs. Alternatively, any other mock service will also work.
 
-# Basic Setup Custom Acitivity & Decision Split
+# Basic Setup Custom Activity & Decision Split
 
 1. Update the file `gpea-sfmc-journey-builder-custom-activity-sample/jb-activity/config.json`, replace all `[https://YOUR_REQUESTBIN_URL](https://YOUR_REQUESTBIN_URL)` with your request bin URL.
 
 
     ![Untitled](doc-assets/Untitled.png)
+   
 
-2. The config file should look like this after updated.
+3. The config file should look like this after updated.
 
     ```json
     {
@@ -49,23 +50,23 @@ This repository is for demonstrating how to build a basic marketing cloud journe
     }
     ```
 
-3. Upload the `jb-activity` `jb-decision-split` folders to your Web Server and have the https version URL. Say `https://HOST_NAME/jb-activity`, `https://HOST_NAME/jb-decision-split`
-4. Create A Marketing Cloud Package
+4. Upload the `jb-activity` `jb-decision-split` folders to your Web Server and have the https version URL. Say `https://HOST_NAME/jb-activity`, `https://HOST_NAME/jb-decision-split`
+5. Create A Marketing Cloud Package
 
     ![Untitled](doc-assets/Untitled%201.png)
 
-5. And Create Component
+6. And Create Component
     - Component Type: Journey Builder Activity
     - Category: Messages
     - Endpoint URL: Fillin the URL for folder `jb-activity`, Say `https://HOST_NAME/jb-activity`
 
     ![Untitled](doc-assets/Untitled%202.png)
 
-6. Add another component for custom decision split activity
+7. Add another component for custom decision split activity
     - Component Type: Journey Builder Activity
     - Category: Flow Control
     - Endpoint URL: Fillin the URL for folder `jb-decision-split`, Say `https://HOST_NAME/jb-decision-split`
-7. Navigate to Journey Builder, you should able to see the newly created custom activities.
+8. Navigate to Journey Builder, you should able to see the newly created custom activities.
 
     ![Untitled](doc-assets/Untitled%203.png)
 

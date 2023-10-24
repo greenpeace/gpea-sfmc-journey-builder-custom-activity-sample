@@ -1,7 +1,7 @@
 {
 	"workflowApiVersion": "1.1",
 	"metaData": {
-		"icon": "send.png",
+		"icon": "chevron.png",
 		"category": "message"
 	},
 	"type": "REST",
@@ -24,21 +24,21 @@
         }
 			],
 			"outArguments": [],
-			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/execute/"
+			"url": "https://***86ap0aj5f.m.pipedream.net/jb-activity/execute/"
 		}
 	},
 	"configurationArguments": {
 		"save": {
-			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/save"
+			"url": "https://***86ap0aj5f.m.pipedream.net/jb-activity/save"
 		},
 		"publish": {
-			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/publish"
+			"url": "https://***86ap0aj5f.m.pipedream.net/jb-activity/publish"
 		},
 		"validate": {
-			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/validate"
+			"url": "https://***86ap0aj5f.m.pipedream.net/jb-activity/validate"
 		},
 		"stop": {
-			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/stop"
+			"url": "https://***86ap0aj5f.m.pipedream.net/jb-activity/stop"
 		}
 	},
 	"schema": {

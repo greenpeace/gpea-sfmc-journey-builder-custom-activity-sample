@@ -23,7 +23,7 @@
         }
       ],
       "outArguments": [],
-      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/execute/"
+      "url": "https://YOUR_REQUESTBIN_URL/jb-decision-split/execute/"
     },
     "startActivityKey": "{{Context.StartActivityKey}}",
     "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
@@ -31,18 +31,18 @@
   },
   "configurationArguments": {
     "save": {
-      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/save"
+      "url": "https://YOUR_REQUESTBIN_URL/jb-decision-split/save"
     },
     "publish": {
-      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/publish"
+      "url": "https://YOUR_REQUESTBIN_URL/jb-decision-split/publish"
     },
     "unpublish": "",
     "stop": {
-      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/stop"
+      "url": "https://YOUR_REQUESTBIN_URL/jb-decision-split/stop"
     },
     "partnerActivityId": "",
     "validate": {
-      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/validate"
+      "url": "https://YOUR_REQUESTBIN_URL/jb-decision-split/validate"
     },
     "outArgumentSchema": {}
   },

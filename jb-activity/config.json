@@ -1,0 +1,60 @@
+{
+	"workflowApiVersion": "1.1",
+	"metaData": {
+		"icon": "send.png",
+		"category": "message"
+	},
+	"type": "REST",
+	"userInterfaces": {
+		"configInspector": {
+			"size": "medium"
+		}
+	},
+	"arguments": {
+		"execute": {
+			"inArguments": [
+        {
+          "ContactKey": "{{Contact.Key}}"
+        },
+        {
+          "InteractionEmail": "{{InteractionDefaults.Email}}"
+        },
+        {
+          "ContactMobilePhone": "{{Contact.Attribute.Contacts.Contact_Salesforce_1.MobilePhone}}"
+        }
+			],
+			"outArguments": [],
+			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/execute/"
+		}
+	},
+	"configurationArguments": {
+		"save": {
+			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/save"
+		},
+		"publish": {
+			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/publish"
+		},
+		"validate": {
+			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/validate"
+		},
+		"stop": {
+			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/stop"
+		}
+	},
+	"schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": [
+          {
+            "messageId": {
+              "dataType": "Text",
+              "direction": "out",
+              "access": "visible"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "name": "DS 1",
+  "id": "c4e78a2d-a81e-4f6c-9551-b026570eedbc",
+  "key": "RESTDECISION-1",
+  "type": "RESTDECISION",
+  "arguments": {
+    "definitionId": "{{Context.DefinitionId}}",
+    "activityId": "{{Activity.Id}}",
+    "contactKey": "{{Context.ContactKey}}",
+    "execute": {
+      "inArguments": [
+        {
+          "ContactKey": "{{Contact.Key}}"
+        },
+        {
+          "InteractionEmail": "{{InteractionDefaults.Email}}"
+        },
+        {
+          "ContactMobilePhone": "{{Contact.Attribute.Contacts.Contact_Salesforce_1.MobilePhone}}"
+        },
+        {
+          "messageId": "{{Interaction.REST-1.messageId}}"
+        }
+      ],
+      "outArguments": [],
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/execute/"
+    },
+    "startActivityKey": "{{Context.StartActivityKey}}",
+    "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
+    "requestObjectId": "{{Context.RequestObjectId}}"
+  },
+  "configurationArguments": {
+    "save": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/save"
+    },
+    "publish": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/publish"
+    },
+    "unpublish": "",
+    "stop": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/stop"
+    },
+    "partnerActivityId": "",
+    "validate": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/validate"
+    },
+    "outArgumentSchema": {}
+  },
+  "metaData": {
+    "icon": "https://api.greenpeace.org.hk/2023/test/up-jb/jb-decision-split/split.png",
+    "iconSmall": "https://api.greenpeace.org.hk/2023/test/up-jb/jb-decision-split/split.png",
+    "category": "Flow Control",
+    "statsContactIcon": "",
+    "original_iconSmall": "split.png",
+    "original_icon": "split.png",
+    "isConfigured": true
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [
+          {
+            "messageId": {
+              "dataType": "Text",
+              "isNullable": false,
+              "direction": "In",
+              "readOnly": false,
+              "access": "Visible"
+            }
+          }
+        ],
+        "outArguments": []
+      }
+    }
+  },
+  "editable": true,
+  "outcomes": [
+    {
+      "key": "769ee94b-1d29-4810-893f-a68069be76e3",
+      "next": "REST-2",
+      "arguments": {
+        "branchResult": "uchen"
+      },
+      "metaData": {
+        "label": "IS_UPCHEN",
+        "invalid": false
+      }
+    },
+    {
+      "key": "efa4efb9-fa19-4d95-9289-481f6f1ee8e5",
+      "next": "WAITBYDURATION-6",
+      "arguments": {
+        "branchResult": "jason"
+      },
+      "metaData": {
+        "label": "IS_JASON",
+        "invalid": false
+      }
+    },
+    {
+      "key": "3bd69b39-87f2-417b-980b-6091c0c8e1a4",
+      "next": "WAITBYDURATION-7",
+      "arguments": {
+        "branchResult": "kenny"
+      },
+      "metaData": {
+        "label": "IS_KENNY",
+        "invalid": false
+      }
+    },
+    {
+      "key": "ff5fd7f1-0138-4f4f-91f2-48b3d89d179c",
+      "next": "WAITBYDURATION-8",
+      "arguments": {
+        "branchResult": "remainder"
+      },
+      "metaData": {
+        "label": "REMAINDER",
+        "invalid": false
+      }
+    }
+  ],
+  "errors": null
+}

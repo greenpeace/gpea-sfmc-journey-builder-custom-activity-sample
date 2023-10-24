@@ -1,0 +1,99 @@
+{
+  "name": "MSG 1",
+  "id": "d2496181-aaea-499b-856d-f9e9b2d0dd79",
+  "key": "REST-1",
+  "type": "REST",
+  "arguments": {
+    "executionMode": "{{Context.ExecutionMode}}",
+    "definitionId": "{{Context.DefinitionId}}",
+    "activityId": "{{Activity.Id}}",
+    "contactKey": "{{Context.ContactKey}}",
+    "execute": {
+      "inArguments": [
+        {
+          "ContactKey": "{{Contact.Key}}"
+        },
+        {
+          "InteractionEmail": "{{InteractionDefaults.Email}}"
+        },
+        {
+          "ContactMobilePhone": "{{Contact.Attribute.Contacts.Contact_Salesforce_1.MobilePhone}}"
+        }
+      ],
+      "outArguments": [],
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/execute/"
+    },
+    "testExecute": "",
+    "startActivityKey": "{{Context.StartActivityKey}}",
+    "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
+    "requestObjectId": "{{Context.RequestObjectId}}"
+  },
+  "configurationArguments": {
+    "save": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/save"
+    },
+    "testSave": "",
+    "publish": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/publish"
+    },
+    "testPublish": "",
+    "unpublish": "",
+    "stop": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/stop"
+    },
+    "testStop": "",
+    "testUnpublish": "",
+    "partnerActivityId": "",
+    "validate": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-activity/validate"
+    },
+    "testValidate": "",
+    "outArgumentSchema": {
+      "messageId": {
+        "dataType": "Text",
+        "isNullable": false,
+        "direction": "Out",
+        "readOnly": false,
+        "access": "Visible"
+      }
+    }
+  },
+  "metaData": {
+    "icon": "https://api.greenpeace.org.hk/2023/test/up-jb/jb-activity/send.png",
+    "category": "message",
+    "iconSmall": "",
+    "statsContactIcon": "",
+    "original_icon": "send.png",
+    "isConfigured": true
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [],
+        "outArguments": [
+          {
+            "messageId": {
+              "dataType": "Text",
+              "isNullable": false,
+              "direction": "Out",
+              "readOnly": false,
+              "access": "Visible"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "editable": true,
+  "outcomes": [
+    {
+      "key": "0e5bcbbd-c396-452a-b0c8-5e96e36b427d",
+      "next": "RESTDECISION-1",
+      "arguments": {},
+      "metaData": {
+        "invalid": false
+      }
+    }
+  ],
+  "errors": null
+}

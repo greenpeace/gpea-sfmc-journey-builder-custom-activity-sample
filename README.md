@@ -17,7 +17,8 @@ This repository is for demonstrating how to build a basic marketing cloud journe
 1. Update the file `gpea-sfmc-journey-builder-custom-activity-sample/jb-activity/config.json`, replace all `[https://YOUR_REQUESTBIN_URL](https://YOUR_REQUESTBIN_URL)` with your request bin URL.
 
 
-    ![Untitled](doc-assets/Untitled.png)
+    ![Untitled](https://github.com/greenpeace/gpea-sfmc-journey-builder-custom-activity-sample/blob/d68fcbc59b291b2ab9e62bb474f3790b20a911bf/doc-assets/Untitled.png)
+   
    
 
 3. The config file should look like this after updated.
@@ -53,14 +54,14 @@ This repository is for demonstrating how to build a basic marketing cloud journe
 4. Upload the `jb-activity` `jb-decision-split` folders to your Web Server and have the https version URL. Say `https://HOST_NAME/jb-activity`, `https://HOST_NAME/jb-decision-split`
 5. Create A Marketing Cloud Package
 
-    ![Untitled](doc-assets/Untitled%201.png)
+    ![Untitled](https://github.com/greenpeace/gpea-sfmc-journey-builder-custom-activity-sample/blob/d68fcbc59b291b2ab9e62bb474f3790b20a911bf/doc-assets/Untitled%201.png)
 
 6. And Create Component
     - Component Type: Journey Builder Activity
     - Category: Messages
     - Endpoint URL: Fillin the URL for folder `jb-activity`, Say `https://HOST_NAME/jb-activity`
 
-    ![Untitled](doc-assets/Untitled%202.png)
+    ![Untitled](https://github.com/greenpeace/gpea-sfmc-journey-builder-custom-activity-sample/blob/d68fcbc59b291b2ab9e62bb474f3790b20a911bf/doc-assets/Untitled%202.png)
 
 7. Add another component for custom decision split activity
     - Component Type: Journey Builder Activity
@@ -68,12 +69,12 @@ This repository is for demonstrating how to build a basic marketing cloud journe
     - Endpoint URL: Fillin the URL for folder `jb-decision-split`, Say `https://HOST_NAME/jb-decision-split`
 8. Navigate to Journey Builder, you should able to see the newly created custom activities.
 
-    ![Untitled](doc-assets/Untitled%203.png)
+    ![Untitled](https://github.com/greenpeace/gpea-sfmc-journey-builder-custom-activity-sample/blob/d68fcbc59b291b2ab9e62bb474f3790b20a911bf/doc-assets/Untitled%203.png)
 
 
 # Custom Activity
 
-![Untitled](doc-assets/Untitled%204.png)
+![Untitled](https://github.com/greenpeace/gpea-sfmc-journey-builder-custom-activity-sample/blob/d68fcbc59b291b2ab9e62bb474f3790b20a911bf/doc-assets/Untitled%204.png)
 
 When you click on the Custom Activity, a JSON edit panel will pop up. This panel is used for demonstration purposes, as the JSON file contains the settings that the journey builder will execute for each contact. In a production environment, it is recommended to build a graphical user interface (GUI) for a better user experience.
 
@@ -122,7 +123,7 @@ Where the `messageId` is the `outArguments` which defined in `schema.arguments.e
 
 # Custom Decision Split
 
-![Untitled](doc-assets/Untitled%205.png)
+![Untitled](https://github.com/greenpeace/gpea-sfmc-journey-builder-custom-activity-sample/blob/d68fcbc59b291b2ab9e62bb474f3790b20a911bf/doc-assets/Untitled%205.png)
 
 ### JSON explains:
 
@@ -131,7 +132,7 @@ Where the `messageId` is the `outArguments` which defined in `schema.arguments.e
     - `{"messageId": "{{Interaction.REST-1.messageId}}"}` This means that the decision split takes the `outArguments.messageId` from the `REST-1` activity.
 - `outcomes[].arguments.branchResult`
     - sample: `outcomes[].arguments.branchResult="uchen"`
-    - The `branchResult` defines the all the outcomes of decision split.
+    - The `branchResult` defines all the outcomes of the decision split.
     - The `branchResult` is captured from the external server response.
 
 ### Sample body sent to external server (`arguments.execute.url`)

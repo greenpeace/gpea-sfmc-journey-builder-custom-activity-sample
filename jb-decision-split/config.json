@@ -1,10 +1,10 @@
 {
-	"workflowApiVersion": "1.1",
-	"metaData": {
-		"icon": "shuffle.png"
-	},
-	"type": "RESTDECISION",
-	"outcomes": [
+  "workflowApiVersion": "1.1",
+  "metaData": {
+    "icon": "shuffle.png"
+  },
+  "type": "RESTDECISION",
+  "outcomes": [
     {
       "arguments": {
         "branchResult": "uchen"
@@ -38,7 +38,7 @@
       }
     }
   ],
-	"arguments": {
+  "arguments": {
     "execute": {
       "inArguments": [
         {
@@ -57,33 +57,35 @@
       "outArguments": [],
       "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/execute/"
     }
-	},
-	"configurationArguments": {
-		"save": {
-			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/save"
-		},
-		"publish": {
-			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/publish"
-		},
-		"validate": {
-			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/validate"
-		},
-		"stop": {
-			"url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/stop"
-		}
-	},
-	"schema": {
-		"arguments": {
-			"execute": {
-				"inArguments": [{
-					"messageId": {
-						"dataType": "Text",
-						"direction": "in",
-						"access": "visible"
-					}
-				}],
-				"outArguments": []
-			}
-		}
-	}
+  },
+  "configurationArguments": {
+    "save": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/save"
+    },
+    "publish": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/publish"
+    },
+    "validate": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/validate"
+    },
+    "stop": {
+      "url": "https://eo9ayy86ap0aj5f.m.pipedream.net/jb-decision-split/stop"
+    }
+  },
+  "schema": {
+    "arguments": {
+      "execute": {
+        "inArguments": [
+          {
+            "messageId": {
+              "dataType": "Text",
+              "direction": "in",
+              "access": "visible"
+            }
+          }
+        ],
+        "outArguments": []
+      }
+    }
+  }
 }

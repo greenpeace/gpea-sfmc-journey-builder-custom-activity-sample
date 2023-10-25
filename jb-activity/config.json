@@ -13,15 +13,15 @@
 	"arguments": {
 		"execute": {
 			"inArguments": [
-        {
-          "ContactKey": "{{Contact.Key}}"
-        },
-        {
-          "InteractionEmail": "{{InteractionDefaults.Email}}"
-        },
-        {
-          "ContactMobilePhone": "{{Contact.Attribute.Contacts.Contact_Salesforce_1.MobilePhone}}"
-        }
+				{
+					"ContactKey": "{{Contact.Key}}"
+				},
+				{
+					"InteractionEmail": "{{InteractionDefaults.Email}}"
+				},
+				{
+					"ContactMobilePhone": "{{Contact.Attribute.Contacts.Contact_Salesforce_1.MobilePhone}}"
+				}
 			],
 			"outArguments": [],
 			"url": "https://***86ap0aj5f.m.pipedream.net/jb-activity/execute/"
@@ -42,19 +42,19 @@
 		}
 	},
 	"schema": {
-    "arguments": {
-      "execute": {
-        "inArguments": [],
-        "outArguments": [
-          {
-            "messageId": {
-              "dataType": "Text",
-              "direction": "out",
-              "access": "visible"
-            }
-          }
-        ]
-      }
-    }
-  }
+		"arguments": {
+			"execute": {
+				"inArguments": [],
+				"outArguments": [
+					{
+						"messageId": {
+							"dataType": "Text",
+							"direction": "out",
+							"access": "visible"
+						}
+					}
+				]
+			}
+		}
+	}
 }
